@@ -1,0 +1,21 @@
+http://php-08-03.vtest/index.php
+
+http://php-08-03.vtest/admin/index.php => http://php-08-03.vtest/index.php?act=admin
+
+http://php-08-03.vtest/admin/product.php => http://php-08-03.vtest/index.php?act=admin/product
+
+http://php-08-03.vtest/admin/menu.php  => http://php-08-03.vtest/index.php?act=admin/menu
+ 
+//
+
+Tìm Controller
+    => function của Controller
+    => parame của Fucntion
+
+App => nơi để người dùng viết code controller, model views ...
+Config => chứa những file config bao gồm config, datable, sesion
+Code => chứa những đoạn code của Hệ thống
+
+- Chạy Controller
+- Tương tác với Data => model
+- Render data ra view => layout master

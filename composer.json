@@ -1,0 +1,18 @@
+{
+    "name": "app/mvc",
+    "description": "Một mô hình MVC từ Khoa Phạm",
+    "autoload": {
+        "psr-4": {
+            "Core\\"    : "Core/",
+            "App\\"     : "App/"
+        },
+        "files": [
+            "App/Libs/Simple_html_dom.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.4",
+        "symfony/cache": "^5.3",
+        "firebase/php-jwt": "^5.3"
+    }
+}
