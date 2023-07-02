@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); */
+/* @font-face {
+    font-family: 'Test Font ABC';
+    src: url('../fonts/Quicksand-Regular.ttf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    /* font-family: 'Test Font ABC'; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+} 
+
+.logo {
+    float: left;
+    width: 25%;
+    margin: 20px 0px;
+}
+
+.from-search {
+    float: left;
+    width: 65%;
+}
+
+
+.from-cart {
+    float: left;
+    width: 10%;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.header-content::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.header-content::before {
+    content: '';
+}
+
+.logo img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.form-input {
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    font-size: 18px;
+    outline: none;
+}
+
+.text-right {
+    text-align: right;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.icon-search {
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    right: 8px;
+}
+
+.icon-search button {
+    border: none;
+    background-color: #1286bf;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.from-cart a {
+    color: #484646;
+    position: relative;
+}
+
+.bage {
+    background-color: #ff780087;
+    color: white;
+    display: inline-block;
+    padding: 0px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    right: -14px;
+}
+
+nav {
+    background-color: #1286bf;
+}
+nav::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 999999;
+    background-color: #0f72a3;
+    display: none;
+}
+
+.menu > li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    border-bottom: 1px solid #cdcdcd;
+    width: 250px;
+}
+.sub-menu li:hover a {
+    background-color: #095277;
+}
+
+/* Main */
+.main {
+    display: flex;
+}
+
+.col-left {
+    flex: 7;
+    margin-right: 15px;
+}
+
+.col-right {
+    flex: 3;
+}
+
+.product .title {
+    margin: 20px 0px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 10px;
+}
+
+.product .title span {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product .lists .item {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 20px;
+}
+
+.product .lists .item .content {
+    padding: 0px 10px;
+}
+
+.product .lists .item .img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.product .lists .item .info {
+    margin-top: 15px;
+    text-align: center;
+}
+.product .lists .item h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 40px;
+    line-height: 1.3em;
+}
+
+.product-news {
+    margin-top: 20px;
+}
+
+.box-title {
+    background-color: #1286bf;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+.box-title span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.box-title span i {
+    color: #13fafa;
+}

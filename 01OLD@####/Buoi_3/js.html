@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập JS</title>
+</head>
+<body>
+    <div id="abc"></div>
+
+    <button type="button" onclick="alert('Xin chào')">Kết Quả</button>
+
+    <span onclick="alert('Xin chào')">Test</span>
+
+    <!-- <input type="text" id="text" onkeyup="showLog()"> -->
+
+    <hr >
+    <input type="number" id="soA"><br />
+    <input type="number" id="soB"><br />
+    <p id="kq"></p>
+
+    <button type="button" onclick="tinhABC()">Tính Lương</button>
+
+    <script>
+
+        class TinhLuong {
+            tinh()
+            {
+                var soA = parseInt(document.getElementById("soA").value);
+                var soB = parseInt(document.getElementById("soB").value);
+                var kq = soA + soB;
+
+                return kq;
+            }
+        }
+
+       
+        function tinhABC()
+        {
+            var tinhluong = new TinhLuong();
+            console.log(tinhluong.tinh());
+
+        }
+
+        for(i = 10; i > 0; i--) {
+            console.log(i);
+        }
+
+        // function tinh()
+        // {
+        //     var soA = parseInt(document.getElementById("soA").value);
+        //     var soB = parseInt(document.getElementById("soB").value);
+
+        //     var kq = soA + soB;
+
+        //     var abc = ['Số 1', 'Số 2'];
+            
+        //     var car = {type:"Fiat", model:"500", color:"white"};
+
+        //     console.log(abc);
+
+        //     document.getElementById("kq").innerHTML = kq;
+        // }
+
+        // function showLog()
+        // {
+        //     var text = document.getElementById("text").value;
+        //     console.log(text);
+        // }
+
+
+
+        document.getElementById("abc").innerHTML = "Khoa Phạm";
+        document.write("NGuyễn Văn A");
+        // alert("Xin chào");
+        console.log("Log test");
+
+
+        // let x = 10;
+        // console.log(x);
+
+        // x = 11;
+        // console.log(x);
+
+        var soA = 10;
+        var soB = 5;
+
+        // CÔng thức tính lương
+        function tinhTong(soA, soB) {
+
+            return soA + soB;
+        }
+        
+
+        console.log(tinhTong(soA, soB));
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
